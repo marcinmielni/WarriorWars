@@ -1,6 +1,7 @@
 namespace WarriorWars{
     enum Faction{
         red,
-        blue
+        blue,
+        green
     }
 }
