@@ -40,5 +40,9 @@ namespace WarriorWars{
                     break;
             } 
         }
+
+        public void attack(Warrior warrior){
+            
+        }
     }
 }
