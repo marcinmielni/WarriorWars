@@ -1,5 +1,0 @@
-namespace WarriorWars{
-    class Armor{
-        
-    }
-}

@@ -1,7 +1,10 @@
-namespace WarriorWars;
-{
+using WarriorWars.Enum;
+using WarriorWars.Equipment;
+
+namespace WarriorWars{
     class Warrior{
-        private static int STARTINGHEALTH = 100;
+        private int goodGuyStartingHealth;
+        private int badGuyStartingHealth;
         
         private Faction faction;
         
@@ -9,11 +12,13 @@ namespace WarriorWars;
         private string name;
         private bool isAlive;
 
+        public bool IsAlive{
+            get{
+                return isAlive;
+            }
+        }
+
         private Weapon weapon;
         private Armor armor;
-        
-        public Warrior(){
-            this.health = STARTINGHEALTH;
-        }
     }
 }
