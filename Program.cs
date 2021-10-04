@@ -4,7 +4,7 @@ using System;
 namespace WarriorWars{
     class Main{
         static Random rng = new Random();
-        static void Main(){
+        static void main(){
             Warrior goodGuy = new Warrior("Bob", Faction.GoodGuy);
             Warrior badGuy = new Warrior("George", Faction.BadGuy);
 
