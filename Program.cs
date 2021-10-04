@@ -2,9 +2,8 @@
 using WarriorWars;
 using System;
 namespace WarriorWars{
-    class Main{
         static Random rng = new Random();
-        static void main(){
+        static void Main(){
             Warrior goodGuy = new Warrior("Bob", Faction.GoodGuy);
             Warrior badGuy = new Warrior("George", Faction.BadGuy);
 
@@ -17,5 +16,4 @@ namespace WarriorWars{
                 }
             }
         }
-    }
 }
