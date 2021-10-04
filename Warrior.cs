@@ -6,7 +6,7 @@ namespace WarriorWars{
         private const int GOOD_GUY_STARTING_HEALTH= 100;
         private const int BAD_GUY_STARTING_HEALTH = 80;
         
-        private Faction faction;
+        private readonly Faction FACTION;
         
         private int health;
         private string name;
@@ -23,7 +23,7 @@ namespace WarriorWars{
 
         public Warrior(string name, Faction faction){
             this.name = name;
-            this.faction = faction;
+            FACTION = faction;
             isAlive = true;
             switch(faction){
                 case Faction.GoodGuy:
@@ -41,8 +41,14 @@ namespace WarriorWars{
             } 
         }
 
-        public void attack(Warrior warrior){
-            
+        public void Attack(Warrior enemy){
+             int damage = weapon.Damage;
+             enemy.health -= damage;
+             System.Console.WriteLine($"{name} attacked {enemy.name} -{damage}hp");
+             if(enemy.health <= 0){
+                 enemy.isAlive = false;
+                 System.Console.WriteLine($"{enemy.name} is dead! {name} is victorios!");
+             }
         }
     }
 }
