@@ -13,6 +13,7 @@ namespace WarriorWars{
                 }
                 else if(rng.Next(0,10) > 5){
                     badGuy.Attack(goodGuy);
+                
                 }
             }
         }
