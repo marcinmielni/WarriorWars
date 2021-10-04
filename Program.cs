@@ -17,6 +17,7 @@ namespace WarriorWars{
                 
                 }
             }
+            System.Threading.Thread.Sleep(5000);
         }
     }
 }
